@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "plumb_terraform_state" {
-    bucket = "expo-plumb-terraform-state"
+    bucket = "${var.bucket_name}"
 
     versioning {
         enabled = true
