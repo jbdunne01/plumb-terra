@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket = "jbd-test-terraform-state"
-    key    = "path/to/my/key"
+    key    = "state/services/terraform.tfstate"
     region = "us-east-1"
   }
 }
